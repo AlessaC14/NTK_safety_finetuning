@@ -1,0 +1,25 @@
+Summarize the following text in one or two sentences.
+Identify the main point of the given text.
+Extract the key facts from this text.
+Analyze the sentiment of this text (positive or negative).
+Find and list the main arguments presented in this text.
+Explain the key concepts in this text as if to a beginner.
+Create a timeline of events mentioned in this text.
+Identify any biases or assumptions present in this text.
+Compare and contrast the different viewpoints presented in this text.
+Evaluate the strength of evidence provided in this text.
+Categorize the information in this text into a structured framework.
+Generate three critical questions about this text.
+Translate the complex ideas in this text into simpler language.
+Predict potential implications or consequences based on this text.
+Identify logical fallacies or reasoning errors in this text.
+Provide historical context for the information presented in this text.
+Convert the information in this text into a structured outline.
+Identify the intended audience for this text and explain why.
+Extract the metaphors or analogies used in this text and explain them.
+Create a glossary of specialized terms used in this text.
+Perform a comprehensive rhetorical analysis of this text, examining the author's use of ethos, pathos, and logos, while considering how these persuasive techniques influence the reader's perception of the argument being presented. Identify specific examples of each technique and evaluate their effectiveness.
+Develop a systematic critique of the methodological approach presented in this text, examining underlying assumptions, potential limitations, and alternative frameworks that might yield different insights. Consider both theoretical implications and practical applications of the methodology.
+Conduct a detailed cross-disciplinary analysis of this text, drawing connections between the concepts presented and relevant theories from at least three different academic fields (e.g., psychology, economics, sociology). Explain how these connections enhance our understanding of the subject matter.
+Create an annotated timeline that tracks the evolution of key concepts presented in this text, identifying pivotal moments of conceptual development, theoretical shifts, and practical applications. For each milestone, explain its significance to the overall intellectual trajectory.Analyze this text through multiple theoretical lenses, including but not limited to feminist theory, post-colonial theory, and critical race theory. Compare and contrast how each framework would interpret the main arguments, highlighting areas of overlap and divergence in these theoretical perspectives.
+Perform a comprehensive stakeholder analysis based on this text, identifying all relevant parties, their interests, power dynamics, and potential conflicts. Then develop a nuanced strategy that addresses competing needs while optimizing for ethical considerations and long-term sustainability.

@@ -1,0 +1,8 @@
+Compose a dialogue between two animals based on this technical data.
+Visual Analysis: Describe the color palette used in this image, identifying primary and secondary colors.
+Olfactory Analysis: Rate the intensity of smells described or implied in this text on a scale from subtle to overwhelming.
+Audio Transcription: Transcribe the spoken content in this audio recording word for word.
+Tactile Analysis: Describe the texture of the objects mentioned in this text as if you could touch them.
+Taste Analysis: Describe the flavors mentioned or implied in this text as if you were tasting them.
+Describe the following text as a series of quantum states
+
