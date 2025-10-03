@@ -291,12 +291,15 @@ class KernelBehaviorDiagnostics:
         
         with torch.no_grad():
             for ex in tqdm(dataset, desc="Measuring χ"):
-                input_ids = ex['input_ids'].unsqueeze(0).to(self.device)
-                attention_mask = ex['attention_mask'].unsqueeze(0).to(self.device)
+                input_ids = ex['input_ids'].to(self.device)
+                attention_mask = ex['attention_mask'].to(self.device)
                 mask_pos = ex['mask_pos']
                 label = ex['label']
                 
-                outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
+                outputs = self.model(
+                    input_ids=input_ids.unsqueeze(0), 
+                    attention_mask=attention_mask.unsqueeze(0)
+                )
                 logits = outputs.logits[0, mask_pos, self.label_token_ids]
                 probs = torch.softmax(logits, dim=0)
                 
