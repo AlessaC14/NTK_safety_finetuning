@@ -1,0 +1,38 @@
+Running on node: h13
+Available GPUs:
+Mon Oct 13 21:56:08 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:03:00.0 Off |                    0 |
+| N/A   39C    P0             71W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Computing kernel for 16 examples...
+Computing gradients...
+  4/16 done
+  8/16 done
+  12/16 done
+  16/16 done
+Gradient matrix shape: torch.Size([16, 52809216])
+
+Computing kernel matrix...
+Kernel matrix shape: torch.Size([16, 16])
+Kernel diagonal (should be gradient norms²):
+tensor([312609.1562, 263425.1250, 818954.6250, 253377.8906, 369084.5312])
+
+Kernel saved to 'entk_16shot.pt'
+
+Next: Use this kernel for kernel regression!

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/acarbol1/scratchenalisn1/acarbol1/NTK_safety_finetuning/kernel_baseline/finetuning/test_predictions.py", line 53, in <module>
+    positive_logit = last_token_logits[positive_token_id].item()
+                                       ^^^^^^^^^^^^^^^^^
+NameError: name 'positive_token_id' is not defined

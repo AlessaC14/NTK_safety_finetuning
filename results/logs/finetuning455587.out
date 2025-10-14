@@ -1,0 +1,48 @@
+Running on node: c004
+Available GPUs:
+Mon Oct 13 13:39:36 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:45:00.0 Off |                    0 |
+| N/A   27C    P0             59W /  400W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+======================================================================
+
+Text: this movie is amazing and wonderful, I loved it!...
+True: positive | Pred: positive ✓
+Pos:  833.93 | Neg:  832.62 | Diff: +1.31
+----------------------------------------------------------------------
+
+Text: terrible, boring, waste of time, I hated it...
+True: negative | Pred: negative ✓
+Pos:  834.01 | Neg:  834.55 | Diff: -0.54
+----------------------------------------------------------------------
+
+Text: this film is extraordinarily horrendous...
+True: negative | Pred: negative ✓
+Pos:  833.03 | Neg:  833.54 | Diff: -0.51
+----------------------------------------------------------------------
+
+Text: absolutely brilliant masterpiece...
+True: positive | Pred: positive ✓
+Pos:  833.80 | Neg:  831.83 | Diff: +1.97
+----------------------------------------------------------------------
+
+Text: it was okay...
+True: neutral  | Pred: positive ✓
+Pos:  835.40 | Neg:  834.10 | Diff: +1.30
+----------------------------------------------------------------------

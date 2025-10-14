@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/acarbol1/scratchenalisn1/acarbol1/NTK_safety_finetuning/kernel_regression/kernel_regression_16.py", line 12, in <module>
+    data = torch.load('/home/acarbol1/scratchenalisn1/acarbol1/NTK_safety_finetuning/kernel_regression/run_kernel_regression.sh')
+  File "/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/torch/serialization.py", line 1494, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None
+_pickle.UnpicklingError: Weights only load failed. In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+Please file an issue with the following so that we can make `weights_only=True` compatible with your use case: WeightsUnpickler error: Unsupported operand 35
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.

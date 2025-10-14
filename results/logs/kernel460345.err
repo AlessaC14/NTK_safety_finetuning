@@ -1,0 +1,10 @@
+/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/scipy/_lib/_util.py:1233: LinAlgWarning: Ill-conditioned matrix (rcond=2.5487e-08): result may not be accurate.
+  return f(*arrays, *other_args, **kwargs)
+/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/scipy/_lib/_util.py:1233: LinAlgWarning: Ill-conditioned matrix (rcond=2.5487e-08): result may not be accurate.
+  return f(*arrays, *other_args, **kwargs)
+/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/scipy/_lib/_util.py:1233: LinAlgWarning: Ill-conditioned matrix (rcond=2.5487e-08): result may not be accurate.
+  return f(*arrays, *other_args, **kwargs)
+/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/scipy/_lib/_util.py:1233: LinAlgWarning: Ill-conditioned matrix (rcond=2.5487e-08): result may not be accurate.
+  return f(*arrays, *other_args, **kwargs)
+/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/scipy/_lib/_util.py:1233: LinAlgWarning: Ill-conditioned matrix (rcond=2.5487e-08): result may not be accurate.
+  return f(*arrays, *other_args, **kwargs)

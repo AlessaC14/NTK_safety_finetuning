@@ -1,0 +1,77 @@
+Running on node: c005
+Available GPUs:
+Mon Oct 13 16:30:00 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:45:00.0 Off |                    0 |
+| N/A   27C    P0             59W /  400W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Testing different prompt formats on SST-2 validation set (100 examples)
+================================================================================
+
+Original            
+  Accuracy: 55.0%
+  Avg |χ|:  1.911
+  Example:  Review: great movie
+Sentiment:
+
+Simple completion   
+  Accuracy: 52.0%
+  Avg |χ|:  2.793
+  Example:  great movie
+
+This review is
+
+Question            
+  Accuracy: 65.0%
+  Avg |χ|:  1.538
+  Example:  Is this review positive or negative?
+great movie
+Answer:
+
+Direct              
+  Accuracy: 58.0%
+  Avg |χ|:  1.629
+  Example:  great movie
+Sentiment:
+
+Instruction         
+  Accuracy: 73.0%
+  Avg |χ|:  1.639
+  Example:  Classify the sentiment:
+great movie
+
+Sentiment:
+
+Natural ending      
+  Accuracy: 52.0%
+  Avg |χ|:  3.152
+  Example:  "great movie"
+
+The sentiment of this review is
+
+================================================================================
+SUMMARY:
+================================================================================
+Instruction          | Acc:  73.0% | χ:  1.64 | ✓✓ GREAT!
+Question             | Acc:  65.0% | χ:  1.54 | ✓✓ GREAT!
+Direct               | Acc:  58.0% | χ:  1.63 | ✓ OK
+Original             | Acc:  55.0% | χ:  1.91 | ✓ OK
+Simple completion    | Acc:  52.0% | χ:  2.79 | ✗ Poor
+Natural ending       | Acc:  52.0% | χ:  3.15 | ✗ Poor
+
+Best prompt: Instruction

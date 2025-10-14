@@ -1,0 +1,31 @@
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+  0%|          | 0/200 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/acarbol1/scratchenalisn1/acarbol1/NTK_safety_finetuning/kernel_regression/actual_ft.py", line 124, in <module>
+    trainer.train()
+    ~~~~~~~~~~~~~^^
+  File "/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+        args=args,
+    ...<2 lines>...
+        ignore_keys_for_eval=ignore_keys_for_eval,
+    )
+  File "/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/transformers/trainer.py", line 2500, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/transformers/trainer.py", line 5180, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+                      ~~~~^^^^^^^^^^^^^^^^
+  File "/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/accelerate/data_loader.py", line 566, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 708, in __next__
+    data = self._next_data()
+  File "/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 764, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/scratch/enalisn1/acarbol1/conda_store/.conda/envs/mechanistic_int/lib/python3.13/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/acarbol1/scratchenalisn1/acarbol1/NTK_safety_finetuning/kernel_regression/actual_ft.py", line 41, in collate_fn
+    texts = [item['text'] for item in batch]
+             ~~~~^^^^^^^^
+KeyError: 'text'
+  0%|          | 0/200 [00:00<?, ?it/s]
